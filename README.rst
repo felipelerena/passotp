@@ -1,4 +1,4 @@
-passotp is a CLI to add OTP passwords for Pass
+passotp is a CLI to add time based one-time passwords for Pass
 
 Instalation
 ===========
