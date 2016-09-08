@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+import re
 
 from argparse import ArgumentParser
 from subprocess import Popen, PIPE
@@ -7,7 +8,6 @@ from clipboard import copy
 from pyotp import TOTP
 
 
-OTP_LINE_KEY = "OTP:"
 PASS_COMMAND = "pass"
 
 
@@ -42,8 +42,9 @@ def get_secret_from_lines(lines):
 
     for line in lines:
         line = line.decode()
-        if line.startswith(OTP_LINE_KEY):
-            otp_secret = line[len(OTP_LINE_KEY):].strip().replace(" ", "")
+        if re.match("^OTP:*", line, re.I):
+            remain = line[4:].strip()
+            otp_secret = remain.replace(" ", "")
             break
 
     return otp_secret
