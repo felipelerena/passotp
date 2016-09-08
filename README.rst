@@ -16,9 +16,20 @@ Edit your password file
     pass edit devel/test
 
 
-Add a line at the end of the file containing "OTP: <secret>", It should look like this "OTP: base32secret3232" or something like this "OTP: KRBP SL73 C3RI 76GP MK3S BGHO TC4B 347A 1DYN CVXJ"
+Add a line at the end of the file containing "OTP: <secret>"
 
-(Warning: the "OTP" is not case sensitive yet issue #1)
+It should look like this:
+
+::
+
+    OTP: base32secret3232
+
+or something like this 
+
+::
+
+    OTP: KRBP SL73 C3RI 76GP MK3S BGHO TC4B 347A 1DYN CVXJ
+
 
 Usage
 =====
