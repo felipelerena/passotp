@@ -22,7 +22,9 @@ Add a line at the end of the file containing "OTP: <secret>", It should look lik
 
 Usage
 =====
+
 ::
+
     passotp <pass-name> [-c]
 
 Example
