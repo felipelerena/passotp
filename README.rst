@@ -6,8 +6,8 @@ pip install passotp
 
 Usage
 =====
-passotp <key name> [-c]
+passotp <pass-name> [-c]
 
 Prepare your pass files
 =======================
-You shoud add a line containing "OTP: <secret>"
+You shoud add a line containing "OTP: <secret>" (Warning: the "OTP" is not case sensitive yet #1)
