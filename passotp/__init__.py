@@ -2,6 +2,7 @@
 import re
 
 from argparse import ArgumentParser
+from datetime import datetime
 from subprocess import Popen, PIPE
 
 from clipboard import copy
@@ -29,6 +30,8 @@ def main():
             copy(otp)
         else:
             print(otp)
+        seconds = (60 - datetime.now().second) % 30
+        print("Seconds remaing: {}".format(seconds))
     else:
         print("No OTP secret found.")
 
