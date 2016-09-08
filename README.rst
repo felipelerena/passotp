@@ -1,7 +1,7 @@
 passotp is a CLI to generate time-based one-time passwords from secrets stored with Pass
 
-Instalation
-===========
+Installation
+============
 
 ::
 
