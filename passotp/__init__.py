@@ -20,12 +20,15 @@ def main():
 
     lines = get_lines(args.ident)
     secret = get_secret_from_lines(lines)
-    otp = TOTP(secret).now()
+    if secret is not None:
+        otp = TOTP(secret).now()
 
-    if args.copy:
-        copy(otp)
+        if args.copy:
+            copy(otp)
+        else:
+            print(otp)
     else:
-        print(otp)
+        print("No OTP secret found.")
 
 
 def get_lines(ident):
