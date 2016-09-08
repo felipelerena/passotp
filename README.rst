@@ -1,4 +1,4 @@
-passotp is a CLI to generate time-based one-time passwords from secrets stored with Pass
+passotp is a CLI to generate time-based one-time passwords from secrets stored with Pass (https://www.passwordstore.org/)
 
 Installation
 ============
