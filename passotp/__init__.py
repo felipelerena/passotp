@@ -40,7 +40,7 @@ def get_secret_from_lines(lines):
     for line in lines:
         line = line.decode()
         if line.startswith(OTP_LINE_KEY):
-            otp_secret = line[len(OTP_LINE_KEY):].strip()
+            otp_secret = line[len(OTP_LINE_KEY):].strip().replace(" ", "")
             break
 
     return otp_secret
