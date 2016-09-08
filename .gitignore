@@ -1,0 +1,6 @@
+.ropeproject
+*.swp
+*.swo
+build/
+dist/
+*egg-info
