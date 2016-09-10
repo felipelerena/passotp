@@ -37,6 +37,10 @@ Usage
 ::
 
     passotp <pass-name> [-c]
+    pass devel/test | passotp [-c]
+
+the -c parameter will copy the code to your clipboard
+
 
 Example
 -------
@@ -49,3 +53,8 @@ Example
   OTP: base32secret3232
   ~$ passotp devel/test
   458262
+  Seconds remaining: 28
+  # or just
+  ~$ pass devel/test | passotp
+  458262
+  Seconds remaining: 28
