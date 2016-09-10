@@ -11,7 +11,7 @@ setup(
     name='passotp',
     version='0.2.0',
     author='Felipe Lerena',
-    description='An TOTP cli for Pass',
+    description='A TOTP cli for Pass',
     author_email='felipelerena@gmail.com',
     packages=['passotp'],
     scripts=[],
