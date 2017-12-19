@@ -26,7 +26,7 @@ def main():
     parser.add_argument("--copy", "-c",  action="store_true", default=False,
                         help="Copy to clipboard.")
     parser.add_argument("--full", "-f",  action="store_true", default=False,
-                        help="retur pass+otp")
+                        help="returns pass+otp")
     args = parser.parse_args()
 
     if isatty:
