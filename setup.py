@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='passotp',
-    version='0.2.0',
+    version='0.3.0',
     author='Felipe Lerena',
     description='A TOTP cli for Pass',
     author_email='felipelerena@gmail.com',
